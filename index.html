@@ -51,6 +51,25 @@
       margin-right: 50px;
       font-family: Chelsea Market;
     }
+    .quote-container {
+      border-radius: 4px;
+      padding: 20px;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: white;
+    }
+    .quotes {
+      display: none;
+
+      text-align: center;
+    }
+    .quotes h5 {
+      font-family: "Nothing You Could Do", cursive;
+      font-size: 26px;
+      color: var(--green);
+      font-weight: bold;
+    }
     .book-cards {
       display: flex;
       flex-wrap: wrap;
@@ -126,12 +145,62 @@
     .bio.book-button {
       width: 25%;
     }
+    .fade {
+      animation: fadeInOut 5s linear 1 forwards;
+    }
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+      }
+      75% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
   </style>
   <body>
     <div class="header">
       <h1>The Books of Brené Brown</h1>
     </div>
     <div class="container">
+      <div class="row">
+        <div class="quote-container shadow">
+          <div class="quotes fade">
+            <h5>
+              “You are imperfect, you are wired for struggle, but you are worthy
+              of love and belonging.”
+            </h5>
+          </div>
+          <div class="quotes fade">
+            <h5>
+              “Vulnerability is the birthplace of innovation, creativity and
+              change.”
+            </h5>
+          </div>
+          <div class="quotes fade">
+            <h5>
+              “Courage starts with showing up and letting ourselves be seen.”
+            </h5>
+          </div>
+          <div class="quotes fade">
+            <h5>
+              “If we can share our story with someone who responds with empathy
+              and understanding, shame can't survive.”
+            </h5>
+          </div>
+          <div class="quotes fade">
+            <h5>
+              “The dark does not destroy the light; it defines it. It's our fear
+              of the dark that casts our joy into the shadows.”
+            </h5>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="book-cards">
           <div class="shadow card">
@@ -348,5 +417,37 @@
         </div>
       </div>
     </div>
+    <script>
+      var quoteIndex = 1;
+      showQuotes(quoteIndex);
+
+      function plusQuotes(n) {
+        showQuotes((quoteIndex += n));
+      }
+
+      function currentQuote(n) {
+        showQuotes((quoteIndex = n));
+      }
+
+      function showQuotes(n) {
+        var i;
+        var quotes = document.getElementsByClassName("quotes");
+        if (n > quotes.length) {
+          quoteIndex = 1;
+        }
+        if (n < 1) {
+          quoteIndex = quotes.length;
+        }
+        for (i = 0; i < quotes.length; i++) {
+          quotes[i].style.display = "none";
+        }
+        quotes[quoteIndex - 1].style.display = "block";
+      }
+      window.onload = function () {
+        setInterval(function () {
+          plusQuotes(1);
+        }, 5000);
+      };
+    </script>
   </body>
 </html>
