@@ -92,6 +92,9 @@
       color: var(--rust);
       border: 1px solid var(--rust);
     }
+    .bio.book-button {
+      width: 25%;
+    }
   </style>
   <body>
     <div class="container">
@@ -212,7 +215,7 @@
         <section class="author shadow">
           <div class="d-flex">
             <img src="Author.png" />
-            <div class="bio">
+            <div class="bio d-flex flex-column justify-content-center">
               <h4>About Brené Bown</h4>
               <p>
                 Dr. Brené Brown is a research professor at the University of
@@ -249,11 +252,13 @@
                 They have two children, Ellen and Charlie, and a weird Bichon
                 named Lucy.
               </p>
+              <a
+                href="https://brenebrown.com/"
+                class="btn book-button mt-3 fs-6 bio"
+                >View Official Website</a
+              >
             </div>
           </div>
-          <a href="https://brenebrown.com/" class="btn book-button mt-3 fs-6"
-            >View Official Website</a
-          >
         </section>
         <div class="row">
           <section class="podcasts">
