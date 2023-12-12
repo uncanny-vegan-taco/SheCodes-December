@@ -53,6 +53,14 @@
       border-radius: 4px;
       background-color: white;
       margin: 30px;
+      width: 80%;
+    }
+    .author img {
+      width: 30%;
+      margin-right: 20px;
+    }
+    .bio {
+      padding: 10px;
     }
     .book-button {
       padding: 8px 16px;
@@ -71,7 +79,9 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="header text-center mt-5"><h1>Life-Changing Book</h1></div>
+        <div class="header text-center mt-5">
+          <h1>The Books of Brené Brown</h1>
+        </div>
       </div>
       <div class="row book-cards">
         <div class="col-3 shadow card">
@@ -180,8 +190,9 @@
         </div>
       </div>
       <div class="row">
-        <section>
-          <div class="author shadow">
+        <section class="author shadow">
+          <div class="d-flex">
+            <img src="Author.png" />
             <div class="bio">
               <p>
                 Dr. Brené Brown is a research professor at the University of
@@ -219,11 +230,10 @@
                 named Lucy.
               </p>
             </div>
-
-            <a href="https://brenebrown.com/" class="btn book-button"
-              >View Official Website</a
-            >
           </div>
+          <a href="https://brenebrown.com/" class="btn book-button mt-3"
+            >View Official Website</a
+          >
         </section>
         <section><div class="podcasts">Embed Spotify Here</div></section>
       </div>
