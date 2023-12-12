@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --green: #83afa6;
+      --blue: #58727f;
+      --gray: #e5e5e5;
+      --rust: #d3a284;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--gray);
+    }
+    .container {
+      max-width: 1500px;
+    }
+    .book-cards {
+      justify-content: space-evenly;
+    }
+    .card {
+      margin: 10px;
+      padding: 10px;
+    }
+    .card h4 {
+      margin-bottom: 10px;
+      color: var(--blue);
+    }
+    .card-content p {
+      padding: 8px;
+    }
+    .card .book-button {
+      width: 100px;
+
+      margin-top: 10px;
+    }
+    .book-image {
+      width: 50%;
+    }
+    .author {
+      padding: 20px;
+      border-radius: 4px;
+      background-color: white;
+      margin: 30px;
+    }
+    .book-button {
+      padding: 8px 16px;
+      font-size: 14px;
+      background-color: var(--rust);
+      color: var(--gray);
+      border: 1px solid var(--rust);
+      transition: 200ms ease-in-out;
+    }
+    .book-button:hover {
+      background-color: var(--gray);
+      color: var(--rust);
+      border: 1px solid var(--rust);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="header text-center mt-5"><h1>Life-Changing Book</h1></div>
+      </div>
+      <div class="row book-cards">
+        <div class="col-3 shadow card">
+          <h4>The Gifts of Imperfection</h4>
+          <div class="card-content d-flex">
+            <img src="Imperfection.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+        <div class="col-3 shadow card">
+          <h4>Daring Greatly</h4>
+          <div class="card-content d-flex">
+            <img src="DaringGreatly.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+        <div class="col-3 shadow card">
+          <h4>Rising Strong</h4>
+          <div class="card-content d-flex">
+            <img src="RisingStrong.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+        <div class="col-3 shadow card">
+          <h4>Dare to Lead</h4>
+          <div class="card-content d-flex">
+            <img src="DaretoLead.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+        <div class="col-3 shadow card">
+          <h4>Braving the Wilderness</h4>
+          <div class="card-content d-flex">
+            <img src="Wilderness.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+        <div class="col-3 shadow card">
+          <h4>I Thought it was Just Me</h4>
+          <div class="card-content d-flex">
+            <img src="JustMe.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+        <div class="col-3 shadow card">
+          <h4>Atlas of the Heart</h4>
+          <div class="card-content d-flex">
+            <img src="Atlas.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+        <div class="col-3 shadow card">
+          <h4>You are Your Best Thing</h4>
+          <div class="card-content d-flex">
+            <img src="Best Thing.png" class="book-image" />
+            <p class="description">Synopsis Here</p>
+          </div>
+          <a href="#" class="book-button btn">Buy Book</a>
+        </div>
+      </div>
+      <div class="row">
+        <section>
+          <div class="author shadow">
+            <div class="bio">
+              <p>
+                Dr. Brené Brown is a research professor at the University of
+                Houston, where she holds the Huffington Foundation Endowed Chair
+                at the Graduate College of Social Work. She also holds the
+                position of visiting professor in management at the University
+                of Texas at Austin McCombs School of Business.
+              </p>
+              <p>
+                Brené has spent the past two decades studying courage,
+                vulnerability, shame, and empathy. She is the author of six #1
+                New York Times bestsellers and is the host of two award-winning
+                podcasts, Unlocking Us and Dare to Lead.
+              </p>
+              <p>
+                Brené’s books have been translated into more than 30 languages,
+                and her titles include Atlas of the Heart, Dare to Lead, Braving
+                the Wilderness, Rising Strong, Daring Greatly, and The Gifts of
+                Imperfection. With Tarana Burke, she co-edited the bestselling
+                anthology You Are Your Best Thing: Vulnerability, Shame
+                Resilience, and the Black Experience.
+              </p>
+              <p>
+                Brené’s TED talk on the Power of Vulnerability is one of the top
+                five most-viewed TED talks in the world, with over 60 million
+                views. Brené is the first researcher to have a filmed lecture on
+                Netflix, and in March 2022, she launched a new show on HBO Max
+                that focuses on her latest book, Atlas of the Heart.
+              </p>
+              <p>
+                Brené spends most of her time working in organizations around
+                the world, helping develop braver leaders and more courageous
+                cultures. She lives in Houston, Texas, with her husband, Steve.
+                They have two children, Ellen and Charlie, and a weird Bichon
+                named Lucy.
+              </p>
+            </div>
+
+            <a href="https://brenebrown.com/" class="btn book-button"
+              >View Official Website</a
+            >
+          </div>
+        </section>
+        <section><div class="podcasts">Embed Spotify Here</div></section>
+      </div>
+    </div>
+  </body>
+</html>
